@@ -20,7 +20,7 @@ namespace Acho.Models
 
         [Column("ObservacaoData")]
         [Display(Name = "Data")]
-        public DateTime ObservacaoData { get; set; } = DateTime.MinValue;
+        public string ObservacaoData { get; set; } = string.Empty;
 
         [ForeignKey("AnimaisId")]
         public int AnimaisId { get; set; }
